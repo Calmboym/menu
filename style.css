@@ -3,6 +3,18 @@ body {
   margin:0; padding:0;
   background:#f7f7f7;
 }
+body {
+  font-family: Vazir, sans-serif;
+  direction: rtl;  /* راست‌چین کردن کل صفحه */
+  text-align: right;  /* متن‌ها راست‌چین شوند */
+}
+.menu-item .name {
+  text-align: right;
+}
+.menu-item .price {
+  text-align: left; /* قیمت سمت چپ */
+}
+
 header {
   position: sticky;
   top:0;
@@ -65,4 +77,50 @@ section h2 {
 @media(max-width:600px){
   .menu-item {flex-direction: column;align-items:flex-start;}
   .menu-item img {margin-left:0;margin-bottom:8px;width:100%;height:auto;}
+}
+
+.menu-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  background: #fff;
+  padding: 10px;
+  border-radius: 6px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+}
+
+.menu-item img {
+  width: 80px; height: 80px;
+  object-fit: cover;
+  border-radius: 6px;
+  margin-left: 12px;  /* فاصله عکس از اسم */
+}
+
+.menu-item .name {
+  flex: 1;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.menu-item .price {
+  font-weight: bold;
+  color: #0b74de;
+  align-self: flex-end; /* سمت چپ پایین قرار می‌گیرد */
+}
+
+/* موبایل */
+@media(max-width:600px){
+  .menu-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .menu-item img {
+    width: 100%;
+    height: auto;
+    margin-left: 0;
+    margin-bottom: 8px;
+  }
+  .menu-item .price {
+    align-self: flex-start; /* موبایل هم سمت چپ پایین */
+  }
 }
