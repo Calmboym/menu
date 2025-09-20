@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Field Cafe Menu</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <div class="tabs">
+    <button onclick="scrollToSection('hot-coffee')">نوشیدنی گرم بر پایه قهوه</button>
+    <button onclick="scrollToSection('cold-coffee')">نوشیدنی سرد بر پایه قهوه</button>
+    <button onclick="scrollToSection('macchiato')">ماکیال</button>
+    <button onclick="scrollToSection('shakebar')">شیکبار</button>
+    <button onclick="scrollToSection('hot-drinks')">نوشیدنی گرم</button>
+  </div>
+</header>
+
+<main>
+  <section id="hot-coffee">
+    <h2>نوشیدنی گرم بر پایه قهوه</h2>
+    <div class="menu-items" id="hot-coffee-items"></div>
+  </section>
+
+  <section id="cold-coffee">
+    <h2>نوشیدنی سرد بر پایه قهوه</h2>
+    <div class="menu-items" id="cold-coffee-items"></div>
+  </section>
+
+  <section id="macchiato">
+    <h2>ماکیال</h2>
+    <div class="menu-items" id="macchiato-items"></div>
+  </section>
+
+  <section id="shakebar">
+    <h2>شیکبار</h2>
+    <div class="menu-items" id="shakebar-items"></div>
+  </section>
+
+  <section id="hot-drinks">
+    <h2>نوشیدنی گرم</h2>
+    <div class="menu-items" id="hot-drinks-items"></div>
+  </section>
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
